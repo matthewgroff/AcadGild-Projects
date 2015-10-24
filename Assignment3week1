@@ -1,0 +1,17 @@
+(function() {
+  var name = prompt("Enter Name");
+    var email = prompt("Enter email address");
+    var phone = prompt("Enter phone number");
+    var address = prompt("Enter address");
+    if (name == null || name == "",email == null || email =="",phone == null || phone == "")
+      alert("Please Fill All Required Field");
+      return false;
+      }
+
+());
+
+(function validateEmail(email) 
+{
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}());
