@@ -1,0 +1,4 @@
+(function (age,name,location) {
+alert('Hello I am ' + age + 'my name is ' + name + ' and city is '+location);
+}
+)('27','Matt','San Francisco');
