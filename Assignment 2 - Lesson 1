@@ -1,0 +1,9 @@
+var anonymousFunc = function () {
+	var email = prompt("Enter email address");
+	
+	if (email == null || email == "") {
+		alert("Email must be filled out");
+		return false;
+	}
+};
+anonymousFunc("Hello");
