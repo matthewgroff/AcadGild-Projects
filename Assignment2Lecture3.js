@@ -2,21 +2,28 @@ var x = 20
 var y = 10
 
 function add(x,y){
-	alert(x + y);
+	var result;
+	result = x + y;
+	alert(result);
 };
 
 
 function subtract(x,y){
-	alert(x - y);
+	var result;
+	result = x - y;
+	alert(result);
 
 };
 
 function multiply(x,y){
-	alert(x * y);
-
+	var result;
+	result = x * y;
+	alert(result);
 };
 function divide(x,y){
-	alert(x / y);
+	var result;
+	result = x / y;
+	alert(result);
 
 };
 
