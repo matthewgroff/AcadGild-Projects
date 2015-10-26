@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<title>
+	hello world
+	</title>
+	</head>
+
+	<body>
+		<div id="myDIV>"</div>
+		</body>
+<script type-"text/javascript">
+	function employee(fname, lname, email, phone){
+
+			this.fname = fname;
+			this.lname = lname;
+			this.email = email;
+			this.phone = phone;	
+	}
+
+	var myObj1 - new employee('Matt', 'Groff', 'matthewjgroff@gmail.com',4156011331);
+
+	var para = document.createElement('P');
+	var t = document.createTextNode(JSON.stringify(myObj1));
+	para.appendChild(t);
+	document.getElementById('myDIV').appendChild(para);
+
+
+	<html>
+

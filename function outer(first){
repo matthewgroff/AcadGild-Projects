@@ -1,0 +1,10 @@
+function outer(first){
+	
+	function inner(second){
+	alert("inside inner function");
+	}
+	return alert("hello");
+};
+
+var myObj = new outer();
+
