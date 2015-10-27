@@ -1,0 +1,49 @@
+<html>
+<BODY>
+<table>
+<tr valign="top">
+<td>
+<SELECT id="s" size="10" multiple>
+	<OPTION value="a">Afghanistan</OPTION>
+	<OPTION value="b">Bahamas</OPTION>
+	<OPTION value="c">Barbados</OPTION>
+	<OPTION value="d">Belgium</OPTION>
+	<OPTION value="e">Bhutan</OPTION>
+	<OPTION value="f">China</OPTION>
+	<OPTION value="g">Croatia</OPTION>
+	<OPTION value="h">Denmark</OPTION>
+	<OPTION value="i">France</OPTION>
+</SELECT>
+</td>
+<td valign="center">
+<a href="#" onclick="listbox_moveacross('s', 'd')">&gt;&gt;</a>
+<br/>
+<a href="#" onclick="listbox_moveacross('d', 's')">&lt;&lt;</a>
+</td>
+<td>
+<SELECT id="d" size="10" multiple>
+	<OPTION value="a">Afghanistan</OPTION>
+	<OPTION value="b">Bahamas</OPTION>
+	<OPTION value="c">Barbados</OPTION>
+	<OPTION value="d">Belgium</OPTION>
+	<OPTION value="e">Bhutan</OPTION>
+	<OPTION value="f">China</OPTION>
+	<OPTION value="g">Croatia</OPTION>
+	<OPTION value="h">Denmark</OPTION>
+	<OPTION value="i">France</OPTION>
+</SELECT>
+</td>
+</tr>
+</table>
+
+</BODY>
+
+<script type-"text/javascript">
+function listbox_moveacross(sourceID,destID){
+    var src=document.getElementById(sourceID);
+    var dest=document.getElementById(destID);
+    for(var count=0;count<src.options.length;count++){if(src.options[count].selected==true){var option=src.options[count];
+var newOption=document.createElement("option");
+count--;}}}
+</script>
+</html>
