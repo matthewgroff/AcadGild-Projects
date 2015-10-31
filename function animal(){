@@ -1,0 +1,4 @@
+function animal(){
+	
+};
+rabbit.__proto__=animal.;
