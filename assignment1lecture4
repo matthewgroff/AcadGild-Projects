@@ -1,0 +1,13 @@
+<html>
+
+<body>
+<form>
+name: <input type="text" name="firstname"><br>
+description: <input type="text" name="description"><br>
+cost per kilometer: <input type="text" name="cost per kilometer"><br>
+vehicle type: <select name="vehicle type">
+	<option value="two wheeler">two wheeler</option>
+	<option value="four wheeler">four wheeler</option>
+</form>
+</body>
+</html>

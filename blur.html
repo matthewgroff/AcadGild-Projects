@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src=
+"http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.
+min.js">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#field1").blur(function(){
+         alert("This is a blur alert");
+		});
+});
+
+</script>
+</head>
+
+<body>
+ <form name='demo_form'>
+<input id="field1"  type="text" value="Field 1">
+
+ <input id="field2"   type="text" value="Field 2">
+ <input type="submit" value="Submit">
+ </form>
+ </body>
+
+</html>

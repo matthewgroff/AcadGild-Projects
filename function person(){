@@ -1,0 +1,34 @@
+function person(){
+	
+	var parent = new Object();
+
+	var privateVariable = false;
+
+	parent.flipPrivateVariable = function(){
+		privateVariable = !privateVariable;
+	};
+
+	parent.showPrivateVariable = function(){
+		alert(privateVariable);
+	};
+
+	parent.myObject = {count:1};
+
+	parent.name = 'person';
+
+	return parent;
+}
+
+function student(){
+	var child = new person();
+	child.name = "student";
+	return child;
+}
+
+var ob1 = new student();
+var ob2 = new student();
+
+ob1.flipPrivateVariable();
+ob2.showPrivateVariable(); 
+ob1.myObject.count++;
+console.log(ob2.myObject.count);

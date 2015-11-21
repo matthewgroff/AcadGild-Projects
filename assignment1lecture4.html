@@ -1,0 +1,27 @@
+<html>
+
+<body>
+<form name="Vehicle Form" method="get">
+name: <input type="text" name="firstname"><br>
+description: <input type="text" name="description"><br>
+cost per kilometer: <input type="text" name="cost per kilometer"><br>
+vehicle type: <select name="vehicle type"   onChange="validateForm()" >
+	<option value="two wheeler">two wheeler</option>
+	<option value="four wheeler">four wheeler</option>
+<input type="submit" name="submitbutton" value="Submit" />
+</form>
+
+
+</body>
+<script>
+function validateForm()
+{
+var x=document.forms["Vehicle Form"]["vehicle type"].value;
+if (x=="four wheeler")
+ {
+ prompt("What fuel type?");
+ return true;
+ }
+}
+</script>
+</html>
